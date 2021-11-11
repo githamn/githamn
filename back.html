@@ -1,1 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+    <title>返校通行证(2分钟内有效)</title>
+    <link rel="stylesheet" href="css/weui.min.css">
+    <script type="text/javascript" src="js/Untitled-1.js" charset="UTF-8"></script>
+<script language="javascript">
+
+ function showRGB(obj) {
+// 其中red、green、blue都是输入框对应的name值
+ var oHex = obj.hex.value;
+ //将RGB转换为16进制Hex值，字符串
+ oHexcode = "#" + oHex;
+ var oDiv0 = document.getElementById("realclock");
+ var oDiv1 = document.getElementById("imgBg");
+// div的背景色=name为hexval输入框的值=16进制背景色的值
+ oDiv0.style.background = obj.hexval.value = oHexcode;
+ oDiv1.style.background = obj.hexval.value = oHexcode;
+ }
+
+ </script>
+
+</head>
+<body ontouchstart>
+<style type="text/css">
+.myttpp
+       {
+	       border: none;
+       } 
+#realclock
+	{
+              text-align:center;
+              height: 100px;
+		font-size: 102px;
+	}
+</style>
+
+
+<div id="bodyDiv"> 
+
+
+<p style="text-align:center;" id="imgBg"><br/><img src="images/pass1.png" alt=""></p>
+<div style="height:150px" id="realclock">
+<script type="text/javascript">var d = new Date();
+	var d=new Date();   
+	var hour=d.getHours()   //获取小时
+	var minute=d.getMinutes()  //获取分钟
+	var second=d.getSeconds()   //获取秒
+
+       if(minute<10) minute="0"+minute
+	if(second<10) second="0"+second
+
+	var nowTime = hour+":"+minute+":"+second;
+	document.write(nowTime);
+</script>
+</div>
+
+
+	<div class="weui-cells__title">学生返校通行证</div>
+	<div class="weui-cells">
+		<div class="weui-cell  weui-cell_example">
+			<div class="weui-cell__hd"><img src="images/person.png" alt="" style="width: 20px; margin-right: 16px; display: block;"></div>
+			<div class="weui-cell__bd">
+				<p>学号：<script>var va1=localStorage.value1
+			document.write(va1)</script></p>
+			</div>
+		</div>
+		<div class="weui-cell  weui-cell_example">
+			<div class="weui-cell__hd"><img src="images/person.png" alt="" style="width: 20px; margin-right: 16px; display: block;"></div>
+			<div class="weui-cell__bd">
+				<p>姓名：<script>var va2=localStorage.value2
+			document.write(va2)</script></p>
+			</div>
+		</div>
+		<div class="weui-cell  weui-cell_example">
+			<div class="weui-cell__hd"><img src="images/person.png" alt="" style="width: 20px; margin-right: 16px; display: block;"></div>
+			<div class="weui-cell__bd">
+				<p>学院：<script>var va3=localStorage.value3
+			document.write(va3)</script></p>
+			</div>
+		</div>
+		<div class="weui-cell  weui-cell_example">
+			<div class="weui-cell__hd"><img src="images/time.png" alt="" style="width: 20px; margin-right: 16px; display: block;"></div>
+			<div class="weui-cell__bd">
+				<p>时间：<script type="text/javascript">var t = new Date();
+	var year = t.getFullYear();
+	var month = t.getMonth()+1;
+	var day = t.getDate();
+	var nowTime = year+"/"+month+"/"+day;
+	document.write(nowTime);
+</script></p>
+			</div>
+		</div>
+		
+	</div>
+	<br/>
+	<br/>
+	<div class="weui-footer">
+	<p>版权所有 &copy; 辽宁大学</p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<form>
+ <input type="text" name="hex" size="7">
+ <button onClick="showRGB(this.parentNode)" type="button">go</button>
+<input type="text" name="hexval" size="7">
+</form>
+	</div>
+</div>
+<script type="text/javascript" src="js/Untitled-1.js"></script>
+</body>
+</html>
 
