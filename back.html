@@ -45,33 +45,21 @@
 
 
 <p style="text-align:center;" id="imgBg"><br/><img src="images/pass1.png" alt=""></p>
-<div style="height:150px" id="realclock"></div>
-<script type="text/javascript">
-			window.onload=function()
-			{
-				window.requestAnimationFrame(getDate)
-			}
-			
-			function getDate()
-			{
-				window.setTimeout(function(){
-					window.requestAnimationFrame(getDate)
-				},1000/2)
-				var d=new Date();   
-				var hour=d.getHours()   //获取小时
-				var minute=d.getMinutes()  //获取分钟
-				var second=d.getSeconds()   //获取秒
-				
-				if(hour<10) hour="0"+hour
-				if(minute<10) minute="0"+minute
-				if(second<10) second="0"+second
-				
-				var Tools=document.getElementById("realclock")
-				var da=hour+":"+minute+":"+second
-				Tools.innerHTML=da
-			}
-			
+<div style="height:150px" id="realclock">
+<script type="text/javascript">var d = new Date();
+	var d=new Date();   
+	var hour=d.getHours()   //获取小时
+	var minute=d.getMinutes()  //获取分钟
+	var second=d.getSeconds()   //获取秒
+
+       if(minute<10) minute="0"+minute
+	if(second<10) second="0"+second
+
+	var nowTime = hour+":"+minute+":"+second;
+	document.write(nowTime);
 </script>
+</div>
+
 
 	<div class="weui-cells__title">学生返校通行证</div>
 	<div class="weui-cells">
